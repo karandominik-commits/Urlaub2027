@@ -19,6 +19,9 @@ Die Unterkunftsseite erwartet je ein Foto, ebenfalls im Wurzelverzeichnis:
 - `sandy-bay-koh-phangan.jpg`
 - `bamboo-kingdom-ao-luek.jpg`
 - `blu-monkey-khao-thong.jpg`
+- `strand-samui.jpg`
+- `sempiak-lombok.jpg`
+- `mowies-gili-air.jpg`
 
 Fehlt eine Datei, zeigt die Seite automatisch `placeholder.svg`. Am besten eigene Fotos oder solche aus den Buchungsbestätigungen verwenden, Querformat, etwa 1200 mal 800 Pixel. Bilder von Hotelseiten direkt zu verlinken ist keine gute Idee, die Links brechen und die Rechte liegen beim Hotel.
 
@@ -35,5 +38,5 @@ Soll die Seite wirklich nicht öffentlich sein, gibt es zwei Wege: ein privates 
 Alle Zahlen stehen direkt im HTML. Beim Ändern beachten:
 
 - Die Gesamtsumme steht auf `index.html` und `kosten.html`.
-- Das Tortendiagramm in `kosten.html` hat die Werte an zwei Stellen, in der Legende und im `data`-Array des Skripts. Der Divisor `23111` in der Tooltip-Funktion muss zur neuen Summe passen.
+- Das Tortendiagramm in `kosten.html` hat die Werte an zwei Stellen, in der Legende und im `data`-Array des Skripts. Der Divisor `22892` in der Tooltip-Funktion muss zur neuen Summe passen.
 - Die Zahl der gebuchten und offenen Nächte steht auf `index.html` und `unterkuenfte.html`.

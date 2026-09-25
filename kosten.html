@@ -25,22 +25,22 @@
 
 <div class="wrap">
 <h1>Kosten</h1>
-<p class="lede">Fix sind die Flüge und 30 Hotelnächte. Der Rest ist gerechnet.</p>
+<p class="lede">Fix sind die Flüge und 41 Hotelnächte. Der Rest ist gerechnet.</p>
 
 <div class="totals">
-  <span class="big">rund 23.100 &euro;</span>
-  <span class="sub">für fünf Personen und 68 Tage, etwa 340 &euro; pro Tag</span>
+  <span class="big">rund 22.900 &euro;</span>
+  <span class="sub">für fünf Personen und 68 Tage, etwa 337 &euro; pro Tag</span>
 </div>
 
 <div class="legend" style="margin-top:1.75rem">
-  <span><i class="swatch" style="background:#14303B"></i>Unterkunft 8.484 &euro;</span>
+  <span><i class="swatch" style="background:#14303B"></i>Unterkunft 8.265 &euro;</span>
   <span><i class="swatch" style="background:#1F7A8C"></i>Transport 6.647 &euro;</span>
   <span><i class="swatch" style="background:#4FA3A5"></i>Verpflegung 4.420 &euro;</span>
   <span><i class="swatch" style="background:#C97E12"></i>Aktivitäten 2.200 &euro;</span>
   <span><i class="swatch" style="background:#B9B3A6"></i>Sonstiges 1.360 &euro;</span>
 </div>
 <div class="chartbox">
-  <canvas id="kosten" role="img" aria-label="Tortendiagramm der Reisekosten nach Kategorien">Unterkunft 8.484 Euro, Transport 6.647 Euro, Verpflegung 4.420 Euro, Aktivitäten 2.200 Euro, Sonstiges 1.360 Euro.</canvas>
+  <canvas id="kosten" role="img" aria-label="Tortendiagramm der Reisekosten nach Kategorien">Unterkunft 8.265 Euro, Transport 6.647 Euro, Verpflegung 4.420 Euro, Aktivitäten 2.200 Euro, Sonstiges 1.360 Euro.</canvas>
 </div>
 
 <h2>Aufschlüsselung</h2>
@@ -48,19 +48,19 @@
 <tr><th>Posten</th><th>Grundlage</th><th class="num">Betrag</th></tr>
 <tr><td>Emirates Wien &ndash; Phuket und Denpasar &ndash; Wien</td><td>bezahlt</td><td class="num">3.536 &euro;</td></tr>
 <tr><td>Scoot Koh Samui &ndash; Lombok</td><td>bezahlt</td><td class="num">1.061 &euro;</td></tr>
-<tr><td>Unterkünfte gebucht und ausgewählt</td><td>38 Nächte</td><td class="num">4.424 &euro;</td></tr>
-<tr><td>Unterkünfte offen</td><td>29 Nächte zu 140 &euro;</td><td class="num">4.060 &euro;</td></tr>
+<tr><td>Unterkünfte gebucht und ausgewählt</td><td>49 Nächte</td><td class="num">5.745 &euro;</td></tr>
+<tr><td>Unterkünfte offen</td><td>18 Nächte zu 140 &euro;</td><td class="num">2.520 &euro;</td></tr>
 <tr><td>Mietwagen, Fähren, Transfers</td><td>Mietwagen allein rund 1.000 &euro;</td><td class="num">2.050 &euro;</td></tr>
 <tr><td>Verpflegung</td><td>68 Tage zu 65 &euro;</td><td class="num">4.420 &euro;</td></tr>
 <tr><td>Aktivitäten</td><td>rund 32 &euro; pro Tag</td><td class="num">2.200 &euro;</td></tr>
 <tr><td>Visa, Gebühren, Versicherung</td><td>Schätzung</td><td class="num">660 &euro;</td></tr>
 <tr><td>Puffer</td><td>Schätzung</td><td class="num">700 &euro;</td></tr>
-<tr class="sum"><td colspan="2">Gesamt</td><td class="num">23.111 &euro;</td></tr>
+<tr class="sum"><td colspan="2">Gesamt</td><td class="num">22.892 &euro;</td></tr>
 </table>
 
 <h2>Wie sicher sind die Zahlen</h2>
-<p>Bezahlt und damit fix sind 4.597 Euro an Flügen sowie 3.699 Euro an gebuchten Hotelnächten, zusammen rund 8.300 Euro. Das ist gut ein Drittel der Gesamtsumme.</p>
-<p>Der größte Unsicherheitsfaktor sind die 29 offenen Nächte. Jede Änderung um 20 Euro pro Nacht verschiebt die Gesamtsumme um rund 580 Euro. Zum Vergleich: der bisherige Schnitt über alle gebuchten Nächte liegt bei 123 Euro, der Ansatz für die offenen Nächte bei 140 Euro.</p>
+<p>Fix sind 4.597 Euro an Flügen sowie 5.020 Euro an gebuchten Hotelnächten, zusammen rund 9.600 Euro. Das sind gut 40 Prozent der Gesamtsumme. Lombok und Gili Air sind bis Ende Jänner noch kostenlos stornierbar.</p>
+<p>Der größte Unsicherheitsfaktor sind die 18 offenen Nächte, vor allem Bali. Jede Änderung um 20 Euro pro Nacht verschiebt die Gesamtsumme um rund 360 Euro. Zum Vergleich: der bisherige Schnitt über alle gebuchten Nächte liegt bei 122 Euro, der Ansatz für die offenen Nächte bei 140 Euro.</p>
 <p>Verpflegung und Aktivitäten sind reine Tagessätze. Sie sind gemischt kalkuliert, also eine Mischung aus lokalem Essen und Resortverpflegung.</p>
 
 <footer class="site"><a href="index.html" style="color:var(--stone)">Zurück zur Übersicht</a></footer>
@@ -72,7 +72,7 @@ new Chart(document.getElementById('kosten'), {
   data: {
     labels: ['Unterkunft', 'Transport', 'Verpflegung', 'Aktivitäten', 'Sonstiges'],
     datasets: [{
-      data: [8484, 6647, 4420, 2200, 1360],
+      data: [8265, 6647, 4420, 2200, 1360],
       backgroundColor: ['#14303B', '#1F7A8C', '#4FA3A5', '#C97E12', '#B9B3A6'],
       borderColor: '#ffffff',
       borderWidth: 2
@@ -86,7 +86,7 @@ new Chart(document.getElementById('kosten'), {
       tooltip: {
         callbacks: {
           label: function (c) {
-            var pct = Math.round(c.parsed / 23111 * 100);
+            var pct = Math.round(c.parsed / 22892 * 100);
             return c.label + ': ' + c.parsed.toLocaleString('de-AT') + ' € (' + pct + ' %)';
           }
         }

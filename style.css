@@ -145,3 +145,13 @@ footer.site { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(-
   border: 1px solid var(--line); border-radius: 4px; padding: .25rem .7rem;
 }
 .stay .links a:hover { border-color: var(--sea); }
+
+.tl { display: flex; height: 22px; border-radius: 4px; overflow: hidden; gap: 2px; margin-top: .5rem; }
+.tl .seg { min-width: 3px; }
+.tl .ok { background: var(--sea); }
+.tl .plan { background: #B9B3A6; }
+.tl .open { background: var(--sun); }
+.tl .transit { background: var(--line); }
+.tl-lbl { display: flex; gap: 2px; font-size: 12px; color: var(--stone); margin-top: .3rem; }
+.tl-lbl span { overflow: hidden; white-space: nowrap; }
+.tl-lbl.dates { justify-content: space-between; margin-top: 0; }
