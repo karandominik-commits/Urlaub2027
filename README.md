@@ -2,12 +2,14 @@
 
 Statische Website, kein Build-Schritt nötig. Chart.js wird per CDN geladen. Alle Dateien liegen flach im Wurzelverzeichnis.
 
-## Was jetzt zu tun ist
+## Hochladen
 
-1. Die sieben HTML-Dateien sowie `style.css` und `placeholder.svg` im Repository ersetzen.
-2. `files.zip` löschen, die Datei wird nicht gebraucht.
-3. Unter Settings, Pages die Quelle auf Branch `main` und Ordner `/ (root)` stellen.
-4. Nach ein bis zwei Minuten ist die Seite unter `https://karandominik-commits.github.io/Urlaub2027/` erreichbar.
+1. Im Repository „Add file“ und dann „Upload files“ wählen.
+2. Die geänderten Dateien hineinziehen, gleichnamige Dateien werden überschrieben. Keine ZIP-Datei hochladen, GitHub entpackt sie nicht.
+3. „Commit directly to the main branch“ wählen und „Commit changes“ klicken.
+4. Nach ein bis zwei Minuten ist die neue Fassung unter `https://karandominik-commits.github.io/Urlaub2027/` sichtbar.
+
+Ist die Seite nicht erreichbar, unter Settings, Pages die Quelle auf Branch `main` und Ordner `/ (root)` stellen.
 
 ## Bilder ergänzen
 
@@ -22,6 +24,7 @@ Die Unterkunftsseite erwartet je ein Foto, ebenfalls im Wurzelverzeichnis:
 - `strand-samui.jpg`
 - `sempiak-lombok.jpg`
 - `mowies-gili-air.jpg`
+- `sanghyang-lembongan.jpg`
 
 Fehlt eine Datei, zeigt die Seite automatisch `placeholder.svg`. Am besten eigene Fotos oder solche aus den Buchungsbestätigungen verwenden, Querformat, etwa 1200 mal 800 Pixel. Bilder von Hotelseiten direkt zu verlinken ist keine gute Idee, die Links brechen und die Rechte liegen beim Hotel.
 
@@ -38,5 +41,5 @@ Soll die Seite wirklich nicht öffentlich sein, gibt es zwei Wege: ein privates 
 Alle Zahlen stehen direkt im HTML. Beim Ändern beachten:
 
 - Die Gesamtsumme steht auf `index.html` und `kosten.html`.
-- Das Tortendiagramm in `kosten.html` hat die Werte an zwei Stellen, in der Legende und im `data`-Array des Skripts. Der Divisor `22892` in der Tooltip-Funktion muss zur neuen Summe passen.
-- Die Zahl der gebuchten und offenen Nächte steht auf `index.html` und `unterkuenfte.html`.
+- Das Tortendiagramm in `kosten.html` hat die Werte an zwei Stellen, in der Legende und im `data`-Array des Skripts. Den Prozentwert im Tooltip rechnet das Skript selbst aus.
+- Die Zahl der gebuchten und offenen Nächte steht auf `index.html`, `unterkuenfte.html` und `kosten.html`.
